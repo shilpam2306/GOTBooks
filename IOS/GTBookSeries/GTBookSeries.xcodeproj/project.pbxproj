@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A41CA396255A8A2900FF3769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA395255A8A2900FF3769 /* AppDelegate.swift */; };
+		A41CA398255A8A2900FF3769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA397255A8A2900FF3769 /* SceneDelegate.swift */; };
+		A41CA39A255A8A2900FF3769 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA399255A8A2900FF3769 /* ViewController.swift */; };
+		A41CA39D255A8A2900FF3769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA39B255A8A2900FF3769 /* Main.storyboard */; };
+		A41CA39F255A8A2B00FF3769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41CA39E255A8A2B00FF3769 /* Assets.xcassets */; };
+		A41CA3A2255A8A2B00FF3769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA3A0255A8A2B00FF3769 /* LaunchScreen.storyboard */; };
+		A41CA3AD255A8A2B00FF3769 /* GTBookSeriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3AC255A8A2B00FF3769 /* GTBookSeriesTests.swift */; };
+		A41CA3B8255A8A2B00FF3769 /* GTBookSeriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3B7255A8A2B00FF3769 /* GTBookSeriesUITests.swift */; };
+		A41CA3D2255A8F0300FF3769 /* GTBooksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D1255A8F0300FF3769 /* GTBooksData.swift */; };
+		A41CA3D3255A8F0300FF3769 /* GTBooksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D1255A8F0300FF3769 /* GTBooksData.swift */; };
+		A41CA3D5255A8F1300FF3769 /* GTCharactersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D4255A8F1300FF3769 /* GTCharactersData.swift */; };
+		A41CA3D6255A8F1300FF3769 /* GTCharactersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D4255A8F1300FF3769 /* GTCharactersData.swift */; };
+		A41CA3D8255A8FE500FF3769 /* GTBooksSeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D7255A8FE500FF3769 /* GTBooksSeriesViewModel.swift */; };
+		A41CA3D9255A8FE500FF3769 /* GTBooksSeriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3D7255A8FE500FF3769 /* GTBooksSeriesViewModel.swift */; };
+		A41CA3DB255A900600FF3769 /* GTCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3DA255A900600FF3769 /* GTCharactersViewModel.swift */; };
+		A41CA3DC255A900600FF3769 /* GTCharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3DA255A900600FF3769 /* GTCharactersViewModel.swift */; };
+		A41CA3DF255A90A300FF3769 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3DE255A90A300FF3769 /* APIService.swift */; };
+		A41CA3E0255A90A300FF3769 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3DE255A90A300FF3769 /* APIService.swift */; };
+		A41CA3E2255A93B500FF3769 /* GTCharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3E1255A93B500FF3769 /* GTCharactersListViewController.swift */; };
+		A41CA3E3255A93B500FF3769 /* GTCharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3E1255A93B500FF3769 /* GTCharactersListViewController.swift */; };
+		A41CA3E6255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3E5255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift */; };
+		A41CA3E7255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3E5255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift */; };
+		A41CA3E8255A967600FF3769 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA399255A8A2900FF3769 /* ViewController.swift */; };
+		A41CA3EA255AB5D400FF3769 /* BooksTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3E9255AB5D400FF3769 /* BooksTableViewDataSource.swift */; };
+		A41CA3EC255ADABD00FF3769 /* GTCharactersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3EB255ADABD00FF3769 /* GTCharactersListTableViewCell.swift */; };
+		A41CA3ED255ADABD00FF3769 /* GTCharactersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA3EB255ADABD00FF3769 /* GTCharactersListTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A41CA3A9255A8A2B00FF3769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41CA38A255A8A2800FF3769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A41CA391255A8A2900FF3769;
+			remoteInfo = GTBookSeries;
+		};
+		A41CA3B4255A8A2B00FF3769 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41CA38A255A8A2800FF3769 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A41CA391255A8A2900FF3769;
+			remoteInfo = GTBookSeries;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A41CA392255A8A2900FF3769 /* GTBookSeries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTBookSeries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41CA395255A8A2900FF3769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A41CA397255A8A2900FF3769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A41CA399255A8A2900FF3769 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A41CA39C255A8A2900FF3769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A41CA39E255A8A2B00FF3769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A41CA3A1255A8A2B00FF3769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A41CA3A3255A8A2B00FF3769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41CA3A8255A8A2B00FF3769 /* GTBookSeriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTBookSeriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41CA3AC255A8A2B00FF3769 /* GTBookSeriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBookSeriesTests.swift; sourceTree = "<group>"; };
+		A41CA3AE255A8A2B00FF3769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41CA3B3255A8A2B00FF3769 /* GTBookSeriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTBookSeriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A41CA3B7255A8A2B00FF3769 /* GTBookSeriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBookSeriesUITests.swift; sourceTree = "<group>"; };
+		A41CA3B9255A8A2B00FF3769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41CA3D1255A8F0300FF3769 /* GTBooksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBooksData.swift; sourceTree = "<group>"; };
+		A41CA3D4255A8F1300FF3769 /* GTCharactersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCharactersData.swift; sourceTree = "<group>"; };
+		A41CA3D7255A8FE500FF3769 /* GTBooksSeriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBooksSeriesViewModel.swift; sourceTree = "<group>"; };
+		A41CA3DA255A900600FF3769 /* GTCharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCharactersViewModel.swift; sourceTree = "<group>"; };
+		A41CA3DE255A90A300FF3769 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A41CA3E1255A93B500FF3769 /* GTCharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCharactersListViewController.swift; sourceTree = "<group>"; };
+		A41CA3E5255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTBooksSeriesTableViewCell.swift; sourceTree = "<group>"; };
+		A41CA3E9255AB5D400FF3769 /* BooksTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewDataSource.swift; sourceTree = "<group>"; };
+		A41CA3EB255ADABD00FF3769 /* GTCharactersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCharactersListTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A41CA38F255A8A2900FF3769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3A5255A8A2B00FF3769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3B0255A8A2B00FF3769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A41CA389255A8A2800FF3769 = {
+			isa = PBXGroup;
+			children = (
+				A41CA394255A8A2900FF3769 /* GTBookSeries */,
+				A41CA3AB255A8A2B00FF3769 /* GTBookSeriesTests */,
+				A41CA3B6255A8A2B00FF3769 /* GTBookSeriesUITests */,
+				A41CA393255A8A2900FF3769 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A41CA393255A8A2900FF3769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA392255A8A2900FF3769 /* GTBookSeries.app */,
+				A41CA3A8255A8A2B00FF3769 /* GTBookSeriesTests.xctest */,
+				A41CA3B3255A8A2B00FF3769 /* GTBookSeriesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A41CA394255A8A2900FF3769 /* GTBookSeries */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3DD255A906A00FF3769 /* Utility */,
+				A41CA3C7255A8D2E00FF3769 /* ViewModel */,
+				A41CA3C6255A8D2600FF3769 /* Model */,
+				A41CA3C5255A8D1B00FF3769 /* View */,
+				A41CA395255A8A2900FF3769 /* AppDelegate.swift */,
+				A41CA397255A8A2900FF3769 /* SceneDelegate.swift */,
+				A41CA39E255A8A2B00FF3769 /* Assets.xcassets */,
+				A41CA3A0255A8A2B00FF3769 /* LaunchScreen.storyboard */,
+				A41CA3A3255A8A2B00FF3769 /* Info.plist */,
+			);
+			path = GTBookSeries;
+			sourceTree = "<group>";
+		};
+		A41CA3AB255A8A2B00FF3769 /* GTBookSeriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3AC255A8A2B00FF3769 /* GTBookSeriesTests.swift */,
+				A41CA3AE255A8A2B00FF3769 /* Info.plist */,
+			);
+			path = GTBookSeriesTests;
+			sourceTree = "<group>";
+		};
+		A41CA3B6255A8A2B00FF3769 /* GTBookSeriesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3B7255A8A2B00FF3769 /* GTBookSeriesUITests.swift */,
+				A41CA3B9255A8A2B00FF3769 /* Info.plist */,
+			);
+			path = GTBookSeriesUITests;
+			sourceTree = "<group>";
+		};
+		A41CA3C5255A8D1B00FF3769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA39B255A8A2900FF3769 /* Main.storyboard */,
+				A41CA3E4255A94AD00FF3769 /* TableViewCells */,
+				A41CA3D0255A8E7A00FF3769 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A41CA3C6255A8D2600FF3769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3D1255A8F0300FF3769 /* GTBooksData.swift */,
+				A41CA3D4255A8F1300FF3769 /* GTCharactersData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A41CA3C7255A8D2E00FF3769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3D7255A8FE500FF3769 /* GTBooksSeriesViewModel.swift */,
+				A41CA3DA255A900600FF3769 /* GTCharactersViewModel.swift */,
+				A41CA3E9255AB5D400FF3769 /* BooksTableViewDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A41CA3D0255A8E7A00FF3769 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA399255A8A2900FF3769 /* ViewController.swift */,
+				A41CA3E1255A93B500FF3769 /* GTCharactersListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A41CA3DD255A906A00FF3769 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3DE255A90A300FF3769 /* APIService.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A41CA3E4255A94AD00FF3769 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA3E5255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift */,
+				A41CA3EB255ADABD00FF3769 /* GTCharactersListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A41CA391255A8A2900FF3769 /* GTBookSeries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41CA3BC255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeries" */;
+			buildPhases = (
+				A41CA38E255A8A2900FF3769 /* Sources */,
+				A41CA38F255A8A2900FF3769 /* Frameworks */,
+				A41CA390255A8A2900FF3769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTBookSeries;
+			productName = GTBookSeries;
+			productReference = A41CA392255A8A2900FF3769 /* GTBookSeries.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A41CA3A7255A8A2B00FF3769 /* GTBookSeriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41CA3BF255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeriesTests" */;
+			buildPhases = (
+				A41CA3A4255A8A2B00FF3769 /* Sources */,
+				A41CA3A5255A8A2B00FF3769 /* Frameworks */,
+				A41CA3A6255A8A2B00FF3769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A41CA3AA255A8A2B00FF3769 /* PBXTargetDependency */,
+			);
+			name = GTBookSeriesTests;
+			productName = GTBookSeriesTests;
+			productReference = A41CA3A8255A8A2B00FF3769 /* GTBookSeriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A41CA3B2255A8A2B00FF3769 /* GTBookSeriesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A41CA3C2255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeriesUITests" */;
+			buildPhases = (
+				A41CA3AF255A8A2B00FF3769 /* Sources */,
+				A41CA3B0255A8A2B00FF3769 /* Frameworks */,
+				A41CA3B1255A8A2B00FF3769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A41CA3B5255A8A2B00FF3769 /* PBXTargetDependency */,
+			);
+			name = GTBookSeriesUITests;
+			productName = GTBookSeriesUITests;
+			productReference = A41CA3B3255A8A2B00FF3769 /* GTBookSeriesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A41CA38A255A8A2800FF3769 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Shilpa;
+				TargetAttributes = {
+					A41CA391255A8A2900FF3769 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A41CA3A7255A8A2B00FF3769 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A41CA391255A8A2900FF3769;
+					};
+					A41CA3B2255A8A2B00FF3769 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = A41CA391255A8A2900FF3769;
+					};
+				};
+			};
+			buildConfigurationList = A41CA38D255A8A2800FF3769 /* Build configuration list for PBXProject "GTBookSeries" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A41CA389255A8A2800FF3769;
+			productRefGroup = A41CA393255A8A2900FF3769 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A41CA391255A8A2900FF3769 /* GTBookSeries */,
+				A41CA3A7255A8A2B00FF3769 /* GTBookSeriesTests */,
+				A41CA3B2255A8A2B00FF3769 /* GTBookSeriesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A41CA390255A8A2900FF3769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41CA3A2255A8A2B00FF3769 /* LaunchScreen.storyboard in Resources */,
+				A41CA39F255A8A2B00FF3769 /* Assets.xcassets in Resources */,
+				A41CA39D255A8A2900FF3769 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3A6255A8A2B00FF3769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3B1255A8A2B00FF3769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A41CA38E255A8A2900FF3769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41CA39A255A8A2900FF3769 /* ViewController.swift in Sources */,
+				A41CA3EA255AB5D400FF3769 /* BooksTableViewDataSource.swift in Sources */,
+				A41CA3E2255A93B500FF3769 /* GTCharactersListViewController.swift in Sources */,
+				A41CA3E6255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift in Sources */,
+				A41CA396255A8A2900FF3769 /* AppDelegate.swift in Sources */,
+				A41CA3DB255A900600FF3769 /* GTCharactersViewModel.swift in Sources */,
+				A41CA3DF255A90A300FF3769 /* APIService.swift in Sources */,
+				A41CA3D8255A8FE500FF3769 /* GTBooksSeriesViewModel.swift in Sources */,
+				A41CA3EC255ADABD00FF3769 /* GTCharactersListTableViewCell.swift in Sources */,
+				A41CA3D5255A8F1300FF3769 /* GTCharactersData.swift in Sources */,
+				A41CA3D2255A8F0300FF3769 /* GTBooksData.swift in Sources */,
+				A41CA398255A8A2900FF3769 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3A4255A8A2B00FF3769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41CA3D3255A8F0300FF3769 /* GTBooksData.swift in Sources */,
+				A41CA3E0255A90A300FF3769 /* APIService.swift in Sources */,
+				A41CA3DC255A900600FF3769 /* GTCharactersViewModel.swift in Sources */,
+				A41CA3E8255A967600FF3769 /* ViewController.swift in Sources */,
+				A41CA3AD255A8A2B00FF3769 /* GTBookSeriesTests.swift in Sources */,
+				A41CA3E7255A94E500FF3769 /* GTBooksSeriesTableViewCell.swift in Sources */,
+				A41CA3E3255A93B500FF3769 /* GTCharactersListViewController.swift in Sources */,
+				A41CA3D9255A8FE500FF3769 /* GTBooksSeriesViewModel.swift in Sources */,
+				A41CA3ED255ADABD00FF3769 /* GTCharactersListTableViewCell.swift in Sources */,
+				A41CA3D6255A8F1300FF3769 /* GTCharactersData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A41CA3AF255A8A2B00FF3769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41CA3B8255A8A2B00FF3769 /* GTBookSeriesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A41CA3AA255A8A2B00FF3769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A41CA391255A8A2900FF3769 /* GTBookSeries */;
+			targetProxy = A41CA3A9255A8A2B00FF3769 /* PBXContainerItemProxy */;
+		};
+		A41CA3B5255A8A2B00FF3769 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A41CA391255A8A2900FF3769 /* GTBookSeries */;
+			targetProxy = A41CA3B4255A8A2B00FF3769 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A41CA39B255A8A2900FF3769 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A41CA39C255A8A2900FF3769 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A41CA3A0255A8A2B00FF3769 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A41CA3A1255A8A2B00FF3769 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A41CA3BA255A8A2B00FF3769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A41CA3BB255A8A2B00FF3769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A41CA3BD255A8A2B00FF3769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A41CA3BE255A8A2B00FF3769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A41CA3C0255A8A2B00FF3769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTBookSeries.app/GTBookSeries";
+			};
+			name = Debug;
+		};
+		A41CA3C1255A8A2B00FF3769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GTBookSeries.app/GTBookSeries";
+			};
+			name = Release;
+		};
+		A41CA3C3255A8A2B00FF3769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GTBookSeries;
+			};
+			name = Debug;
+		};
+		A41CA3C4255A8A2B00FF3769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GTBookSeriesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shilpa.Khoros.GTBookSeriesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GTBookSeries;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A41CA38D255A8A2800FF3769 /* Build configuration list for PBXProject "GTBookSeries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41CA3BA255A8A2B00FF3769 /* Debug */,
+				A41CA3BB255A8A2B00FF3769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A41CA3BC255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41CA3BD255A8A2B00FF3769 /* Debug */,
+				A41CA3BE255A8A2B00FF3769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A41CA3BF255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41CA3C0255A8A2B00FF3769 /* Debug */,
+				A41CA3C1255A8A2B00FF3769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A41CA3C2255A8A2B00FF3769 /* Build configuration list for PBXNativeTarget "GTBookSeriesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A41CA3C3255A8A2B00FF3769 /* Debug */,
+				A41CA3C4255A8A2B00FF3769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A41CA38A255A8A2800FF3769 /* Project object */;
+}
