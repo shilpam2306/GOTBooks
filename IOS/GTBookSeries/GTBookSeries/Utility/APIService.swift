@@ -12,12 +12,12 @@ class APIService :  NSObject {
 
     func apiToGetBooksData(sourcesURL : URL , completion : @escaping ([GTBooksData]) -> ()){
         URLSession.shared.dataTask(with: sourcesURL) { (data, urlResponse, error) in
-            if let data = data {
+            if data != nil && error == nil {
                 do {
                     let decoder = JSONDecoder()
                      //Decode JSON Response Data
                     let model = try decoder.decode([GTBooksData].self, from:
-                                 data)
+                        data!)
                     completion(model)
                 } catch let parsingError {
                     print("Error", parsingError)
@@ -32,7 +32,7 @@ class APIService :  NSObject {
             if let data = data {
                 
                 do {
-                    //here dataResponse received from a network request
+                    //Here dataResponse received from a network request
                     let decoder = JSONDecoder()
                     //Decode JSON Response Data
                     let model = try decoder.decode(GTCharactersData.self, from:

@@ -12,18 +12,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
+//    func dataFound(data: [GTBooksData]) {
+//        self.items = data
+//        print(self.items as Any)
+//    }
+    
+    
     private var cellIdentifier : String?
     private var count = 0
     private var items : [GTBooksData]?
     private var itemName : String?
-    var indicator: UIActivityIndicatorView!
+    //var indicator: UIActivityIndicatorView!
     @IBOutlet weak var employeeTableView: UITableView!
+    //private var dataSource : BooksTableViewDataSource<GTBooksSeriesTableViewCell,GTBooksData>!
     
-    private var employeeViewModel : GTBooksSeriesViewModel!
+    private var employeeViewModel : GTBooksSeriesViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        progressView()
+        //progressView()
         callToViewModelForUIUpdate()
         employeeTableView.delegate = self
         employeeTableView.dataSource = self
@@ -32,46 +39,50 @@ class ViewController: UIViewController {
     }
     
     func callToViewModelForUIUpdate(){
-        self.indicator.startAnimating()
+        
+//        self.dataSource = BooksTableViewDataSource(cellIdentifier: "EmployeeTableViewCell", items: self.employeeViewModel.empData, configureCell: { (cell, evm) in
+//            cell.lblBooksId.text = evm.name
+//        })
+        
+        self.view.activityStartAnimating(activityColor: UIColor.white, backgroundColor: UIColor.black.withAlphaComponent(0.3))
         self.employeeViewModel =  GTBooksSeriesViewModel()
-        self.employeeViewModel.bindEmployeeViewModelToController = {
+        self.employeeViewModel?.bindEmployeeViewModelToController = {
             DispatchQueue.main.async {
-                self.indicator.stopAnimating()
-                self.items = self.employeeViewModel.empData
+                self.view.activityStopAnimating()
+                self.items = self.employeeViewModel?.empData
+                
+                //Filter only the A Game of Thrones
+                //let item = self.employeeViewModel?.empData
+                //self.items = item?.filter({$0.name == "A Game of Thrones"})
                 self.employeeTableView.reloadData()
                 
             }
         }
     }
     
-    func progressView() {
-        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = view.center
-        self.view.addSubview(indicator)
-        self.view.bringSubviewToFront(indicator)
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    }
+    //Redundant
+//    func progressView() {
+//        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+//        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+//        indicator.center = view.center
+//        self.view.addSubview(indicator)
+//        self.view.bringSubviewToFront(indicator)
+//        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//    }
 }
 
 // MARK: TableView Dellegates
 extension ViewController  : UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count
+        return items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GTBooksSeriesTableViewCell", for: indexPath) as! GTBooksSeriesTableViewCell
         
         let item = self.items?[indexPath.row]
-        if item!.name == "A Game of Thrones" {
-           count += 1
-           cell.lblBooksId.text = item?.name
-        }
-//        if item!.name == "George R. R. Martin" {
-//           cell.lblBooksId.text = item?.name
-//        }
+        cell.lblBooksId.text = item?.name
         return cell
     }
     

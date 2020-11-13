@@ -8,13 +8,14 @@
 
 import UIKit
 
+
 class GTCharactersViewModel: NSObject {
 
-    private var apiService : APIService!
+    private var apiService : APIService?
     public var urls = [String]()
     public var ctrAr = [GTCharactersData]()
     let group = DispatchGroup()
-    let cache = NSCache<NSString, GTCharactersData>()
+    let cache = NSCache<AnyObject, GTCharactersData>()
     private(set) var chrData : GTCharactersData! {
         didSet {
             self.bindCharactersViewModelToController()
@@ -43,26 +44,24 @@ class GTCharactersViewModel: NSObject {
             guard let url = URL(string: i.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
                     return
             }
-            self.apiService.apiToGetCharactersData(sourcesURL: url) { (chrData) in
+            self.apiService?.apiToGetCharactersData(sourcesURL: url) { (chrData) in
                 self.chrData = chrData
-                
                 self.ctrAr.append(chrData)
-                self.cache.setObject(self.chrData, forKey: "CachedObject")
-              
-              }
+                self.cache.setObject(self.chrData, forKey: "CachedObject" as AnyObject)
+             }
            }
             DispatchQueue.main.async {
                 print("This is run on the main queue, after the previous code in outer block")
             }
        }
         
-        
         self.group.leave()
     }
     
     func cacheData() {
-       if let cachedVersion = cache.object(forKey: "CachedObject") {
+       if let cachedVersion = cache.object(forKey: "CachedObject" as AnyObject) {
             self.ctrAr.append(cachedVersion)
+            return
         } else {
             callFuncToGetEmpData()
         }

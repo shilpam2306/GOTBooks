@@ -21,7 +21,7 @@ class GTCharactersListViewController: UIViewController {
     override func viewDidLoad() {
          super.viewDidLoad()
          title = "Characters List"
-         progressView()
+         //progressView()
          callToViewModelForUIUpdate()
          charactersTableView.delegate = self
          charactersTableView.dataSource = self
@@ -29,24 +29,25 @@ class GTCharactersListViewController: UIViewController {
          //charactersTableView.estimatedRowHeight = UITableView.automaticDimension
          self.charactersTableView.tableFooterView = UIView()
     }
-    
-    func progressView() {
-        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
-        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        indicator.center = view.center
-        self.view.addSubview(indicator)
-        self.view.bringSubviewToFront(indicator)
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-    }
+   
+    //Redundant
+//    func progressView() {
+//        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+//        indicator.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+//        indicator.center = view.center
+//        self.view.addSubview(indicator)
+//        self.view.bringSubviewToFront(indicator)
+//        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//    }
      
      func callToViewModelForUIUpdate(){
-        self.indicator.startAnimating()
+        self.view.activityStartAnimating(activityColor: UIColor.white, backgroundColor: UIColor.black.withAlphaComponent(0.3))
         self.charactersViewModel = GTCharactersViewModel(itemsChr ?? [])
-         self.charactersViewModel.bindCharactersViewModelToController = {
+        self.charactersViewModel.bindCharactersViewModelToController = {
              DispatchQueue.main.async {
-                self.indicator.stopAnimating()
-                 self.items = self.charactersViewModel.ctrAr
-                 self.charactersTableView.reloadData()
+                self.view.activityStopAnimating()
+                self.items = self.charactersViewModel.ctrAr
+                self.charactersTableView.reloadData()
                  
              }
          }

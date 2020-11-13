@@ -8,9 +8,14 @@
 
 import UIKit
 
+//protocol GTBooksSeriesViewModelDelegate {
+//    func dataFound(data : [GTBooksData])
+//}
+
 class GTBooksSeriesViewModel: NSObject {
     
-    private var apiService : APIService!
+    //var delegate : GTBooksSeriesViewModelDelegate?
+    private var apiService : APIService?
     let group = DispatchGroup()
     let sourcesURL = URL(string: "https://anapioficeandfire.com/api/books/")
 
@@ -30,8 +35,10 @@ class GTBooksSeriesViewModel: NSObject {
     
     func callFuncToGetEmpData() {
        self.group.enter()
-       self.apiService.apiToGetBooksData(sourcesURL: sourcesURL!) { (empData) in
+        self.apiService?.apiToGetBooksData(sourcesURL: sourcesURL!) { (empData) in
             self.empData = empData
+            //self.delegate?.dataFound(data: self.empData)
+            
        }
         self.group.leave()
     }

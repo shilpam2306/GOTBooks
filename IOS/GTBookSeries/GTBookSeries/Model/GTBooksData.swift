@@ -9,7 +9,7 @@
 import Foundation
 
  // MARK: - GTBooks
- struct GTBooksData : Decodable {
+ struct GTBooksData : Codable {
      let url: String
      let name, isbn: String
      let authors: [String]
